@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'screens/welcome_screen.dart';
 import 'screens/info_screen.dart';
 import 'screens/family_history_screen.dart';
 import 'screens/results_screen.dart';
@@ -21,8 +20,7 @@ class PatientHealthApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => WelcomeScreen(),
-        '/info': (context) => InfoScreen(),
+        '/': (context) => InfoScreen(),
         '/history': (context) => FamilyHistoryScreen(),
         '/results': (context) => ResultsScreen(),
       },
