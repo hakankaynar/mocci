@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.hello_world"
+    namespace = "com.example.mocci"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
