@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ResultsScreen extends StatelessWidget {
 
@@ -6,25 +7,26 @@ class ResultsScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final List<String> history =
         ModalRoute.of(context)?.settings.arguments as List<String>;
 
     final List<String> recommendations = [];
-    if (history.contains('Diabetes')) {
-      recommendations.add('Quarterly Test for Diabetes');
+    if (history.contains(l10n.diabetes)) {
+      recommendations.add(l10n.quarterlyTestForDiabetes);
     }
-    if (history.contains('Coronary Heart Disease')) {
-      recommendations.add('Yearly Test for Coronary Heart Disease');
+    if (history.contains(l10n.coronaryHeartDisease)) {
+      recommendations.add(l10n.yearlyTestForCoronaryHeartDisease);
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text('Results')),
+      appBar: AppBar(title: Text(l10n.results)),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Recommended tests:',
+            Text(l10n.recommendedTests,
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             ...recommendations.map((test) => Text('• $test')),
           ],

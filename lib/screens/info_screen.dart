@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class InfoScreen extends StatefulWidget {
 
@@ -16,17 +17,20 @@ class InfoScreenState extends State<InfoScreen> {
 
 
   // herbirinin randevusu farkli olacak
-  final List<String> _availableIllnesses = [
-  'Diabetes', // Serker
-  'Hypertension', // Tansiyon
-  'Coronary Heart Disease', // Koroner kalp hastaligi
-  'Inflamatuar bagirsak hastaligi',
-  'Hipotroid', 
-  'Hipertroid',
-  'Koah',
-  'Bobrek Yetmezligi',
-  'Siroz',
-  ];
+  List<String> _getAvailableIllnesses(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return [
+      l10n.diabetes,
+      l10n.hypertension,
+      l10n.coronaryHeartDisease,
+      l10n.inflammatoryBowelDisease,
+      l10n.hypothyroid,
+      l10n.hyperthyroid,
+      l10n.copd,
+      l10n.kidneyFailure,
+      l10n.cirrhosis,
+    ];
+  }
 
 
 
@@ -48,7 +52,7 @@ void _toggleIllness(String illness) {
   Widget build(BuildContext context) {
     return Scaffold(
       // Buraya boy kilo diye eklenecek
-      appBar: AppBar(title: Text('Enter your information')),
+      appBar: AppBar(title: Text(AppLocalizations.of(context)!.enterYourInformation)),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Form(
@@ -58,17 +62,17 @@ void _toggleIllness(String illness) {
             children: [
               TextFormField(
                 controller: _nameController,
-                decoration: InputDecoration(labelText: 'Name Surname'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.nameSurname),
               ),
               TextFormField(
                 controller: _ageController,
                 keyboardType: TextInputType.number,
-                decoration: InputDecoration(labelText: 'Age'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.age),
               ),
               // TODO boy kilo eklenecek
              
               ListTile(
-                title: Text('Male'),
+                title: Text(AppLocalizations.of(context)!.male),
                 leading: Radio(
                   value: 'Male',
                   groupValue: _sex,
@@ -76,7 +80,7 @@ void _toggleIllness(String illness) {
                 ),
               ),
               ListTile(
-                title: Text('Female'),
+                title: Text(AppLocalizations.of(context)!.female),
                 leading: Radio(
                   value: 'Female',
                   groupValue: _sex,
@@ -89,10 +93,10 @@ void _toggleIllness(String illness) {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // burasi sonraki ekrana gidecek
-                    Text('Kronik hastaliklar'), // Kronik hastaliklar
+                    Text(AppLocalizations.of(context)!.chronicDiseases),
                     Wrap(
                       spacing: 8,
-                      children: _availableIllnesses.map((illness) {
+                      children: _getAvailableIllnesses(context).map((illness) {
                         final selected = _selectedIllnesses.contains(illness);
                         return FilterChip(
                           label: Text(illness),
@@ -109,7 +113,7 @@ void _toggleIllness(String illness) {
                 alignment: Alignment.bottomLeft,
                 child: ElevatedButton(
                   onPressed: () => Navigator.pushNamed(context, '/history'),
-                  child: Text('NEXT'),
+                  child: Text(AppLocalizations.of(context)!.next),
                 ),
               ),
             ],

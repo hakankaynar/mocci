@@ -1,0 +1,107 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Mocci",
+  "@appTitle": {
+    "description": "Uygulamanın başlığı"
+  },
+  "enterYourInformation": "Bilgilerinizi Girin",
+  "@enterYourInformation": {
+    "description": "Bilgi ekranı başlığı"
+  },
+  "nameSurname": "Ad Soyad",
+  "@nameSurname": {
+    "description": "Ad soyad alanı etiketi"
+  },
+  "age": "Yaş",
+  "@age": {
+    "description": "Yaş alanı etiketi"
+  },
+  "male": "Erkek",
+  "@male": {
+    "description": "Erkek cinsiyet seçeneği"
+  },
+  "female": "Kadın",
+  "@female": {
+    "description": "Kadın cinsiyet seçeneği"
+  },
+  "chronicDiseases": "Kronik Hastalıklar",
+  "@chronicDiseases": {
+    "description": "Kronik hastalıklar bölüm başlığı"
+  },
+  "next": "İLERİ",
+  "@next": {
+    "description": "İleri butonu"
+  },
+  "familyHistory": "Aile Geçmişi",
+  "@familyHistory": {
+    "description": "Aile geçmişi ekranı başlığı"
+  },
+  "addFamilyHistory": "Aile Geçmişi Ekle",
+  "@addFamilyHistory": {
+    "description": "Aile geçmişi ekleme bölümü"
+  },
+  "results": "Sonuçlar",
+  "@results": {
+    "description": "Sonuçlar ekranı başlığı"
+  },
+  "recommendedTests": "Önerilen Testler:",
+  "@recommendedTests": {
+    "description": "Önerilen testler başlığı"
+  },
+  "diabetes": "Diyabet",
+  "@diabetes": {
+    "description": "Diyabet hastalığı"
+  },
+  "hypertension": "Hipertansiyon",
+  "@hypertension": {
+    "description": "Tansiyon hastalığı"
+  },
+  "coronaryHeartDisease": "Koroner Kalp Hastalığı",
+  "@coronaryHeartDisease": {
+    "description": "Koroner kalp hastalığı"
+  },
+  "inflammatoryBowelDisease": "İnflamatuar Bağırsak Hastalığı",
+  "@inflammatoryBowelDisease": {
+    "description": "İnflamatuar bağırsak hastalığı"
+  },
+  "hypothyroid": "Hipotroid",
+  "@hypothyroid": {
+    "description": "Hipotroid hastalığı"
+  },
+  "hyperthyroid": "Hipertroid",
+  "@hyperthyroid": {
+    "description": "Hipertroid hastalığı"
+  },
+  "copd": "KOAH",
+  "@copd": {
+    "description": "KOAH hastalığı"
+  },
+  "kidneyFailure": "Böbrek Yetmezliği",
+  "@kidneyFailure": {
+    "description": "Böbrek yetmezliği hastalığı"
+  },
+  "cirrhosis": "Siroz",
+  "@cirrhosis": {
+    "description": "Siroz hastalığı"
+  },
+  "colorectalCancer": "Kolorektal Kanser",
+  "@colorectalCancer": {
+    "description": "Kolorektal kanser"
+  },
+  "breastCancer": "Meme Kanseri",
+  "@breastCancer": {
+    "description": "Meme kanseri"
+  },
+  "prostateCancer": "Prostat Kanseri",
+  "@prostateCancer": {
+    "description": "Prostat kanseri"
+  },
+  "quarterlyTestForDiabetes": "Diyabet için Üç Aylık Test",
+  "@quarterlyTestForDiabetes": {
+    "description": "Diyabet test önerisi"
+  },
+  "yearlyTestForCoronaryHeartDisease": "Koroner Kalp Hastalığı için Yıllık Test",
+  "@yearlyTestForCoronaryHeartDisease": {
+    "description": "Koroner kalp hastalığı test önerisi"
+  }
+}
