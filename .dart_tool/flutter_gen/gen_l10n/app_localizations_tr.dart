@@ -21,6 +21,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get age => 'Yaş';
 
   @override
+  String get height => 'Boy (cm)';
+
+  @override
+  String get weight => 'Kilo (kg)';
+
+  @override
   String get male => 'Erkek';
 
   @override

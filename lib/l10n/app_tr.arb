@@ -16,6 +16,14 @@
   "@age": {
     "description": "Yaş alanı etiketi"
   },
+  "height": "Boy (cm)",
+  "@height": {
+    "description": "Boy alanı etiketi"
+  },
+  "weight": "Kilo (kg)",
+  "@weight": {
+    "description": "Kilo alanı etiketi"
+  },
   "male": "Erkek",
   "@male": {
     "description": "Erkek cinsiyet seçeneği"

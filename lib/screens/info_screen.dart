@@ -13,6 +13,8 @@ class InfoScreenState extends State<InfoScreen> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _ageController = TextEditingController();
+  final TextEditingController _heightController = TextEditingController();
+  final TextEditingController _weightController = TextEditingController();
   String _sex = 'Male';
 
 
@@ -39,7 +41,16 @@ class InfoScreenState extends State<InfoScreen> {
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(labelText: AppLocalizations.of(context)!.age),
               ),
-              // TODO boy kilo eklenecek
+              TextFormField(
+                controller: _heightController,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.height),
+              ),
+              TextFormField(
+                controller: _weightController,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.weight),
+              ),
              
               ListTile(
                 title: Text(AppLocalizations.of(context)!.male),

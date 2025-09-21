@@ -4,6 +4,8 @@
   "enterYourInformation": "Enter your information",
   "nameSurname": "Name Surname",
   "age": "Age",
+  "height": "Height (cm)",
+  "weight": "Weight (kg)",
   "male": "Male",
   "female": "Female",
   "chronicDiseases": "Chronic Diseases",

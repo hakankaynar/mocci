@@ -21,6 +21,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get age => 'Age';
 
   @override
+  String get height => 'Height (cm)';
+
+  @override
+  String get weight => 'Weight (kg)';
+
+  @override
   String get male => 'Male';
 
   @override

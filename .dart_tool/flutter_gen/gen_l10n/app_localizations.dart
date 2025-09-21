@@ -119,6 +119,18 @@ abstract class AppLocalizations {
   /// **'Yaş'**
   String get age;
 
+  /// Boy alanı etiketi
+  ///
+  /// In tr, this message translates to:
+  /// **'Boy (cm)'**
+  String get height;
+
+  /// Kilo alanı etiketi
+  ///
+  /// In tr, this message translates to:
+  /// **'Kilo (kg)'**
+  String get weight;
+
   /// Erkek cinsiyet seçeneği
   ///
   /// In tr, this message translates to:
